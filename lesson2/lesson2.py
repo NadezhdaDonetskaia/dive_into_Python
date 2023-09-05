@@ -66,3 +66,17 @@ def sum_and_mult_fractions(
 
 
 print(sum_and_mult_fractions('1/2', '3/4'))
+
+
+from fractions import Fraction
+
+# Создаем объекты Fraction
+fraction_1 = Fraction(1, 2)
+fraction_2 = Fraction(3, 4)
+
+# Вычисляем сумму и произведение дробей
+sum_result = fraction_1 + fraction_2
+product_result = fraction_1 * fraction_2
+
+print(sum_result)
+print(product_result)
