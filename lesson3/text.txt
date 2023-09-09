@@ -1,0 +1,17 @@
+Having this issue where I was trying to enable a recycling bin for a network drive and that this was a little work around and I did something with the locations and now I’m slightly worried / extremely worried.
+
+Basically I found a superuser post that told me I could go into a personal folder I don’t use for my situation I used “contacts”. Right click it, hit properties, hit location, and choose the root location of my shared drive (my F: drive).
+
+Then they said to check my “recycling bin locations” and I should see my network drive.
+
+The whole reason I did this is because people that have access to this shared drive have been deleting things on accident and they need modify permissions. I thought this would be simple.
+
+But now when I look at my contact folder on the local user I’m signed into to test, I’m not able to change the location back to default… I don’t even see a locations tab… and there’s nothing in the contacts folder.
+
+However when I go to my shared F:/ drive and go to “shares” I can now see my “contacts” folder there and when I open it, it appears to have a ton of files from the drive. Yet I created a test file to delete and when I go to my local recycling bin, it’s still not there. ..
+
+What did I do, is it a big problem, and can I reverse it?
+
+So far I haven’t seen anything break. Everything seems to be working normally but there’s too many unknowns in here for my comfort.
+
+Can anyone assist?
