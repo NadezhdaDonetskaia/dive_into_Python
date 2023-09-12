@@ -68,7 +68,6 @@ th = {
 # print(knapsack(th, 3))
 
 
-
 # Задание №8
 # Погружение в Python | Коллекции
 # ✔ Три друга взяли вещи в поход. Сформируйте
@@ -131,5 +130,3 @@ def find_items_common_except_one(friends_items: dict) -> tuple[set, str]:
 print(get_all_items(friends_items))
 print(get_unic_items(friends_items))
 print(find_items_common_except_one(friends_items))
-
-
