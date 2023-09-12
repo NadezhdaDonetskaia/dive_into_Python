@@ -45,10 +45,12 @@ def create_arg_dict(**kwargs: Any) -> dict:
 # текст в файле ATM
 
 
-account = [0, ]
+account = []
 
 
-def get_balance(acc=account):
+def get_balance(acc: list = account) -> float | int:
+    if not acc:
+        return 0
     return sum(account)
 
 
@@ -60,18 +62,21 @@ def charge_interest(acc=account,
     return 0
 
 
-def top_up(val, acc=account):
+def top_up(val: int,
+           acc: list = account) -> float | int:
     acc.append(val)
     proc = charge_interest()
     acc[-1] += proc
     return get_balance()
 
 
-def pull_off(val, acc=account, multiplicity=50):
+def pull_off(val: int,
+             acc: list = account,
+             multiplicity: int = 50) -> float | int:
     if val % multiplicity != 0:
         print(f'Значение не кратно {multiplicity}')
         return get_balance()
-    if account[-1] - val < 0:
+    if get_balance() - val < 0:
         print('Значение больше остатка')
         return get_balance()
     acc.append(-val)
